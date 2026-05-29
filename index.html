@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR da Notícia - Protótipo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🖥️ VAR DA NOTÍCIA</h1>
+        <p>Sistema Inteligente de Detecção de Fake News no Futebol</p>
+    </header>
+
+    <main class="container">
+        <section class="card-verificacao">
+            <h2>Verificar Notícia</h2>
+            <p class="subtitulo">Informe abaixo a notícia que você quer verificar</p>
+            
+            <textarea id="txtNoticia" placeholder="Cole aqui o texto da notícia recebida nas redes sociais ou WhatsApp..."></textarea>
+            
+            <button id="btnVerificar">CHAMAR O VAR</button>
+
+            <div id="painelResultado" class="resultado-oculto">
+                <div class="resultado-header">
+                    <span id="vereditoSelo"></span>
+                    <strong id="clubeAlvo"></strong>
+                </div>
+                <p id="justificativaIa"></p>
+            </div>
+        </section>
+
+        <section class="card-dashboard">
+            <h2>Dashboard Estatístico</h2>
+            <p class="subtitulo">Ranking de Fake News por Clube (Série A)</p>
+            <div class="grafico-container">
+                <canvas id="graficoFakes"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 VAR da Notícia - Atualizações em tempo real com IA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
